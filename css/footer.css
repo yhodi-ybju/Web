@@ -1,0 +1,129 @@
+.info-page {
+    background: #440C0C;
+    color: #ffffff;
+    padding: 40px 0;
+    font-family: 'League Gothic', sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-columns {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+}
+
+.footer-column {
+    width: 22%;
+}
+
+.footer-column h3 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.footer-list {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-list li a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: block;
+    transition: color 0.3s;
+}
+
+.footer-list li a:hover {
+    color: #FFA07A;
+}
+
+.footer-social-media {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.footer-social-media a {
+    text-decoration: none;
+    color: #ffffff;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.footer-social-media a:hover {
+    color: #FFA07A;
+}
+
+.footer-legal {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    .footer-columns,
+    .footer-social-media {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-column {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .container {
+        width: 95%;
+    }
+}
+
+.footer-columns {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    max-width: 75%;
+}
+.section_time{
+    display: flex;
+    align-items: center;
+    margin-right: 5.8%;
+}
+
+@media (max-width: 1296px) {
+    .section_time{
+        width: auto;
+    }
+}
+
+.time_description{
+    font-size: 1vw;
+    font-family: Roboto, sans-serif;
+}
+
+@media (max-width: 1296px) {
+    .time_description{
+        font-size: 110%;
+        font-family: Roboto, sans-serif;
+    }
+}
+
+.time_duration{
+    font-size: 1vw;
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+}
+
+@media (max-width: 1296px) {
+    .time_duration{
+        font-size: 110%;
+        font-family: Roboto, sans-serif;
+    }
+}

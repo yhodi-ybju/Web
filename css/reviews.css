@@ -1,0 +1,38 @@
+.reviews-page {
+    background-color: #6F0000;
+    text-align: center;
+    padding: 40px;
+}
+
+.reviews-title {
+    color: white;
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.reviews-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.review {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 300px;
+}
+
+.review-text {
+    font-style: italic;
+    color: #555;
+}
+
+.review-author {
+    color: #333;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
