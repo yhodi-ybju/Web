@@ -1,0 +1,233 @@
+.faq-page {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'League Gothic', sans-serif;
+    background-color: #550000;
+    width: 100vw;
+    min-height: 100vh;
+    padding-top: 100px;
+    overflow-x: hidden;
+}
+
+.faq-page div {
+    color: #303030;
+}
+
+.wrapper {
+    max-width: 75%;
+    margin: 50px auto;
+}
+
+.wrapper > p,
+.wrapper > h1 {
+    margin: 1.5rem 0;
+    text-align: center;
+}
+
+.wrapper > h1 {
+    letter-spacing: 3px;
+    color: white;
+}
+
+.accordion {
+    background-color: white;
+    color: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+    font-size: 1.2rem;
+    width: 100%;
+    padding: 2rem 2.5rem;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+
+.accordion i {
+    font-size: 1.6rem;
+}
+
+.active,
+.accordion:hover {
+    background-color: #f1f7f5;
+}
+
+
+.pannel {
+    padding: 0 2rem;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+}
+
+.pannel p {
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 1.2rem;
+    line-height: 1.4;
+}
+
+.faq {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin: 10px 0;
+}
+
+.faq.active {
+    border: none;
+}
+
+
+@media screen and (max-width: 1080px) {
+    .wrapper {
+        width: 85%;
+    }
+
+    .accordion {
+        font-size: 1.1rem;
+        padding: 1.8rem 2.2rem;
+    }
+
+    .pannel p {
+        font-size: 1.1rem;
+    }
+}
+.faq-page {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'League Gothic', sans-serif;
+    background-color: #550000;
+    width: 100vw;
+    min-height: 100vh;
+    padding-top: 100px;
+    overflow-x: hidden;
+}
+
+.wrapper {
+    max-width: 75%;
+    margin: 50px auto;
+}
+
+.wrapper > p,
+.wrapper > h1 {
+    margin: 1.5rem 0;
+    text-align: center;
+}
+
+.wrapper > h1 {
+    letter-spacing: 3px;
+    color: white;
+}
+
+.accordion {
+    background-color: white;
+    color: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+    font-size: 1.2rem;
+    width: 100%;
+    padding: 2rem 2.5rem;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+
+.accordion i {
+    font-size: 1.6rem;
+}
+
+.active,
+.accordion:hover {
+    background-color: #f1f7f5;
+}
+
+
+.pannel {
+    padding: 0 2rem;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+}
+
+.pannel p {
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 1.2rem;
+    line-height: 1.4;
+}
+
+.faq {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin: 10px 0;
+}
+
+.faq.active {
+    border: none;
+}
+
+
+
+@media screen and (max-width: 1080px) {
+    .wrapper {
+        width: 85%;
+    }
+
+    .accordion {
+        font-size: 1.1rem;
+        padding: 1.8rem 2.2rem;
+    }
+
+    .pannel p {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .faq-page {
+        padding-top: 50px;
+    }
+
+    .wrapper {
+        width: 95%;
+    }
+
+    .accordion {
+        padding: 1.5rem 2rem;
+    }
+
+    .pannel p {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 495px) {
+    .wrapper {
+        width: 100%;
+        margin: 30px auto;
+    }
+
+    .accordion {
+        font-size: 0.9rem;
+        padding: 1rem 1.5rem;
+    }
+
+    .pannel p {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .accordion {
+        padding: 0.8rem 1.2rem;
+    }
+
+    .pannel p {
+        font-size: 0.8rem;
+    }
+}

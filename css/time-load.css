@@ -1,0 +1,40 @@
+.time-load {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    background-color: #440C0C;
+}
+
+.time-description{
+    font-size: 1vw;
+    font-family: 'League Gothic', sans-serif;
+}
+
+.time-duration{
+    font-size: 1vw;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1080px) {
+    .time-description,
+    .time-duration {
+        font-size: 0.9em;
+    }
+}
+
+
+@media screen and (max-width: 680px) {
+    .time-description,
+    .time-duration {
+        font-size: 0.8em;
+    }
+}
+
+
+@media screen and (max-width: 495px) {
+    .time-description,
+    .time-duration {
+        font-size: 0.7em;
+    }
+}
+
