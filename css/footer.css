@@ -1,11 +1,11 @@
 .info-page {
-    background: #440C0C;
+    background-color: #440C0C;
     color: #ffffff;
     padding: 40px 0;
     font-family: 'League Gothic', sans-serif;
 }
 
-.container {
+.info-container {
     width: 80%;
     margin: 0 auto;
     display: flex;
@@ -91,39 +91,78 @@
     justify-content: space-between;
     max-width: 75%;
 }
-.section_time{
-    display: flex;
-    align-items: center;
-    margin-right: 5.8%;
-}
 
-@media (max-width: 1296px) {
-    .section_time{
-        width: auto;
+@media screen and (max-width: 1080px) {
+    .footer-column h3 {
+        font-size: 20px;
+    }
+
+    .footer-legal {
+        font-size: 14px;
+    }
+
+    .info-container {
+        width: 90%;
     }
 }
 
-.time_description{
-    font-size: 1vw;
-    font-family: Roboto, sans-serif;
-}
+@media screen and (max-width: 680px) {
+    .footer-column {
+        width: 48%;
+        margin-bottom: 15px;
+    }
 
-@media (max-width: 1296px) {
-    .time_description{
-        font-size: 110%;
-        font-family: Roboto, sans-serif;
+    .footer-column h3 {
+        font-size: 18px;
+    }
+
+    .footer-list li a {
+        font-size: 14px;
+    }
+
+    .footer-social-media a {
+        margin: 0 5px;
+    }
+
+    .footer-legal {
+        font-size: 12px;
     }
 }
 
-.time_duration{
-    font-size: 1vw;
-    font-family: Roboto, sans-serif;
-    font-weight: bold;
+
+
+@media screen and (max-width: 495px) {
+    .footer-columns {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-column {
+        width: 100%;
+    }
+
+    .footer-column h3,
+    .footer-list li a,
+    .footer-legal {
+        font-size: 16px;
+    }
 }
 
-@media (max-width: 1296px) {
-    .time_duration{
-        font-size: 110%;
-        font-family: Roboto, sans-serif;
+
+@media screen and (max-width: 360px) {
+    .info-container {
+        width: 95%;
+    }
+
+    .footer-column h3 {
+        font-size: 16px;
+    }
+
+    .footer-list li a {
+        font-size: 12px;
+    }
+
+    .footer-legal {
+        font-size: 11px;
     }
 }

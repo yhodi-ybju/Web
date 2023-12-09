@@ -1,49 +1,177 @@
-.page-about-us {
-    background-color: #f5f5f5;
-    color: #333;
-    padding: 50px;
-    text-align: center;
+.about-us-page {
     font-family: 'League Gothic', sans-serif;
-}
-
-.timeline-container {
+    background-color: #550000;
+    width: 100vw;
+    height: 100vh;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: white;
 }
 
-.timeline-item {
-    background-color: #fff;
-    border-radius: 5px;
-    padding: 20px;
-    margin: 10px 0;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+
+.buy-container {
+    display: flex;
     position: relative;
-    width: 80%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
 }
 
-.timeline-icon {
+
+.buy-container > *:not(.content_star) {
+    align-self: flex-start;
+}
+
+.buy-title, .buy-button {
+    text-align: center;
+    margin: auto;
+    display: block;
+}
+
+.logo-star {
+    background-image: url('/img/soft_star_logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+    background-position: center;
     position: absolute;
-    top: -30px;
     left: 50%;
-    transform: translateX(-50%);
-    background-color: #fff;
-    border-radius: 50%;
-    padding: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    top: 10%;
+    transform: translate(-50%, -50%);
 }
 
-.timeline-content h2 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
+.buy-title {
+    color: #FFF;
+    text-align: center;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    margin-bottom: 20px;
+    margin-top: 20%;
 }
 
-@media screen and (max-width: 768px) {
-    .timeline-container {
-        width: 95%;
+.buy-description {
+    color: #FFF;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    width: 788px;
+    height: auto;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.buy-button {
+    background-color: #FFFFFF;
+    color: #001427;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+    border-radius: 82px;
+}
+
+.buy-button:hover {
+    background-color: #e6a100;
+}
+
+
+.buy-button:hover {
+    background-color: #e6a100;
+}
+
+@media screen and (max-width: 1080px) {
+    .buy-title {
+        font-size: 32px;
+        margin-top: 15%;
     }
 
-    .timeline-item {
-        width: 100%;
+    .buy-description {
+        font-size: 22px;
+        width: 90%;
+    }
+
+    .logo-star {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .buy-title {
+        font-size: 20px;
+    }
+
+    .buy-description {
+        font-size: 14px;
+        width: 75%;
+    }
+
+    .logo-star {
+        width: 40px;
+        height: 40px;
+    }
+
+    .buy-button {
+        padding: 4px 8px;
+        font-size: 12px;
+        margin-top: -10px;
+    }
+}
+
+@media screen and (max-width: 495px) {
+    .buy-title {
+        font-size: 14px;
+        margin-top: 5%;
+    }
+
+    .buy-description {
+        font-size: 10px;
+        width: 70%;
+    }
+
+    .logo-star {
+        width: 30px;
+        height: 30px;
+        top: 2%;
+    }
+
+    .buy-button {
+        padding: 3px 5px;
+        font-size: 9px;
+        margin-top: -15px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .buy-title {
+        font-size: 12px;
+        margin-top: 4%;
+    }
+
+    .buy-description {
+        font-size: 9px;
+        width: 65%;
+    }
+
+    .logo-star {
+        width: 25px;
+        height: 25px;
+        top: 1%;
+    }
+
+    .buy-button {
+        padding: 2px 4px;
+        font-size: 8px;
+        margin-top: -20px;
     }
 }
