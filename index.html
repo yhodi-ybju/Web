@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="css/table.css">
     <link rel="stylesheet" href="css/blog.css">
     <link rel="stylesheet" href="css/converter.css">
+    <link rel="stylesheet" href="css/authorization.css">
 
     <link
             rel="stylesheet"
@@ -32,6 +33,7 @@
     <script src="js/time-load.js"></script>
     <script src="js/faq.js"></script>
     <script src="js/converter.js"></script>
+    <script src="js/authorization.js"></script>
 </head>
 
 
@@ -56,8 +58,8 @@
                 <a href="converter.html" class="nav-link">Currency Converter</a>
             </div>
             <div class="navbar-auth">
-                <a href="#" class="nav-link">Sign Up</a>
-                <a href="#" class="nav-link">Login</a>
+                <a href="#" class="nav-link" onclick="openSignupModal()">Sign Up</a>
+                <a href="#" class="nav-link" onclick="openLoginModal()">Login</a>
             </div>
         </div>
     </nav>
@@ -306,6 +308,44 @@ console.log(kizilToCrypto(100));
 </section>
 
 
+
+<div id="loginModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="document.getElementById('loginModal').style.display='none'">&times;</span>
+        <form id="loginForm">
+            <h2>Login</h2>
+            <label>
+                <input type="text" placeholder="Username" name="username" required>
+            </label>
+            <label>
+                <input type="password" placeholder="Password" name="password" required>
+            </label>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</div>
+
+
+<div id="signupModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="document.getElementById('signupModal').style.display='none'">&times;</span>
+        <form id="signupForm">
+            <h2>Sign Up</h2>
+            <label>
+                <input type="text" placeholder="Username" name="username" required>
+            </label>
+            <label>
+                <input type="email" placeholder="Email" name="email" required>
+            </label>
+            <label>
+                <input type="password" placeholder="Password" name="password" required>
+            </label>
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+</div>
+
+
 <footer id="info" class="info-page">
     <div class="info-container">
         <div class="footer-columns">
@@ -351,6 +391,7 @@ console.log(kizilToCrypto(100));
 <section class="time-load">
     <span class="time-description">Time load: <span class="time-duration"></span></span>
 </section>
+
 
 
 </body>
