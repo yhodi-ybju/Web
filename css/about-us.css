@@ -85,10 +85,6 @@
 }
 
 
-.buy-button:hover {
-    background-color: #e6a100;
-}
-
 @media screen and (max-width: 1080px) {
     .buy-title {
         font-size: 32px;
