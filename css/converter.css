@@ -1,9 +1,11 @@
-body {
+.converter-page {
     text-align: center;
     padding: 20px;
     font-family: "League Gothic", sans-serif;
     background-color: #440C0C;
     color: #2c2a2a;
+    width: 100vw;
+    height: 94vh;
 }
 
 .converter-container {
