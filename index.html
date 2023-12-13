@@ -43,6 +43,8 @@
     <script src="js/converter.js"></script>
     <script src="js/authorization.js"></script>
     <script src="js/photo-gallery.js"></script>
+    <script src="js/network.js"></script>
+
 </head>
 
 
@@ -317,42 +319,6 @@ console.log(kizilToCrypto(100));
 </section>
 
 
-<div id="loginModal" class="modal">
-    <div class="modal-content">
-        <span class="close" onclick="closeModal('loginModal')">&times;</span>
-        <form id="loginForm">
-            <h2>Login</h2>
-            <label>
-                <input type="text" placeholder="Username" id="loginUsername" required>
-            </label>
-            <label>
-                <input type="password" placeholder="Password" id="loginPassword" required>
-            </label>
-            <button type="submit">Login</button>
-        </form>
-    </div>
-</div>
-
-
-<div id="signupModal" class="modal">
-    <div class="modal-content">
-        <span class="close" onclick="closeModal('signupModal')">&times;</span>
-        <form id="signupForm">
-            <h2>Sign Up</h2>
-            <label>
-                <input type="text" placeholder="Username" id="signupUsername" required>
-            </label>
-            <label>
-                <input type="email" placeholder="Email" id="signupEmail" required>
-            </label>
-            <label>
-                <input type="password" placeholder="Password" id="signupPassword" required>
-            </label>
-            <button type="submit">Sign Up</button>
-        </form>
-    </div>
-</div>
-
 <section id="photo-gallery" class="photo-gallery-section">
     <div class="swiper mySwiper">
         <div class="swiper-wrapper">
@@ -374,6 +340,13 @@ console.log(kizilToCrypto(100));
         <div class="swiper-pagination"></div>
     </div>
 </section>
+
+
+<div id="preloader" style="display: none;">
+    <img src="img/vibing-cool-dog.gif" alt="">
+</div>
+<div id="data-container"></div>
+
 
 
 <footer id="info" class="info-page">
