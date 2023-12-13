@@ -1,11 +1,13 @@
-// Функция для открытия модального окна входа
 function openLoginModal() {
     document.getElementById('loginModal').style.display='block';
 }
 
-// Функция для открытия модального окна регистрации
 function openSignupModal() {
     document.getElementById('signupModal').style.display='block';
+}
+
+function closeModal(modalId) {
+    document.getElementById(modalId).style.display = 'none';
 }
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -41,28 +43,27 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Здесь должен быть ваш код для отправки данных на сервер
         // Например, использование Fetch API для отправки данных
-        console.log('Signup:', username, email, password);
-        // Fetch запрос...
+        fetch('https://jsonplaceholder.typicode.com/users', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ username, email, password })
+        })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Registration failed');
+                }
+                return response.json();
+            })
+            .then(data => {
+                console.log('Signup successful:', data);
+                // Обработка успешной регистрации
+                // Например, перенаправление пользователя или другие действия
+            })
+            .catch(error => {
+                console.error('Signup error:', error);
+                // Обработка ошибки регистрации
+            });
     }
 });
-
-function performLogin() {
-    // ... получение данных из формы ...
-
-    fetch('URL_для_входа', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({ username, password })
-    })
-        .then(response => response.json())
-        .then(data => {
-            console.log('Login successful:', data);
-            // Обработка успешного входа
-        })
-        .catch(error => {
-            console.error('Login error:', error);
-            // Обработка ошибки входа
-        });
-}
