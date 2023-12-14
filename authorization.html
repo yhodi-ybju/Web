@@ -1,23 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+<head xmlns="http://www.w3.org/1999/html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
     <title>Authorization</title>
     <link href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/authorization.css">
     <link rel="stylesheet" href="css/converter.css">
     <link rel="stylesheet" href="css/time-load.css">
-
     <script src="js/time-load.js"></script>
     <script src="js/converter.js"></script>
+    <script src="js/fetchData.js"></script>
 
 </head>
+
 <body>
 
+<header>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="#" class="navbar-logo">
+                <img src="img/logo_berry.png" alt="Kizil Logo">
+            </a>
+            <div class="navbar-main">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="index.html#about-us"  class="nav-link">About Us</a>
+                <a href="index.html#faq" class="nav-link">FAQ</a>
+                <a href="index.html#info" class="nav-link">Contact</a>
+                <a href="index.html#info" class="nav-link">Currency Converter</a>
+            </div>
+            <div class="navbar-auth">
+                <a href="authorization.html" class="nav-link" id="navCreateAccount">Create account</a>
+                <a href="authorization.html" class="nav-link" id="navLogin">Log in</a>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+<section id="authorization-page" class="authorization-page">
+    <div class="form-container">
+        <form class="form" id="login">
+            <h1 class="form__title">Login</h1>
+            <div class="form__message form__message--error"></div>
+            <div class="form__input-group">
+                <label>
+                    <input type="text" class="form__input" autofocus placeholder="Username or email">
+                </label>
+                <div class="form__input-error-message"></div>
+            </div>
+            <div class="form__input-group">
+                <label>
+                    <input type="password" class="form__input" autofocus placeholder="Password">
+                </label>
+                <div class="form__input-error-message"></div>
+            </div>
+            <button class="form__button" type="submit">Continue</button>
+            <p class="form__text">
+                <a class="form__link" href="./" id="linkCreateAccount">Don't have an account? Create account</a>
+            </p>
+        </form>
+
+
+
+        <form class="form form--hidden" id="createAccount">
+            <h1 class="form__title">Create Account</h1>
+            <div class="form__message form__message--error"></div>
+            <div class="form__input-group">
+                <label for="signupUsername"></label><input type="text" id="signupUsername" class="form__input" autofocus placeholder="Username">
+                <div class="form__input-error-message"></div>
+            </div>
+            <div class="form__input-group">
+                <label>
+                    <input type="text" class="form__input" autofocus placeholder="Email Address">
+                </label>
+                <div class="form__input-error-message"></div>
+            </div>
+            <div class="form__input-group">
+                <label>
+                    <input type="password" class="form__input" autofocus placeholder="Password">
+                </label>
+                <div class="form__input-error-message"></div>
+            </div>
+            <div class="form__input-group">
+                <label>
+                    <input type="password" class="form__input" autofocus placeholder="Confirm password">
+                </label>
+                <div class="form__input-error-message"></div>
+            </div>
+            <button class="form__button" type="submit">Continue</button>
+            <p class="form__text">
+                <a class="form__link" href="./" id="linkLogin">Already have an account? Sign in</a>
+            </p>
+        </form>
+    </div>
+    <script src="js/authorization.js"></script>
+</section>
+
+<section class="preloader" id="preloader">
+    <img src="img/vibing-cool-dog.gif" alt="Loading...">
+</section>
+
+<section class="time-load">
+    <span class="time-description">Time load: <span class="time-duration"></span></span>
+</section>
 
 
 
 </body>
-</html>
